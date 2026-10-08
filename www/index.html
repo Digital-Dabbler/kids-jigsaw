@@ -17,20 +17,33 @@
 <section id="home" class="screen">
   <header class="topbar">
     <h1 class="logo">拼图小岛</h1>
-    <button id="sound-btn" class="btn btn-round" type="button" aria-label="声音开关">🔊</button>
+    <button id="sound-btn" class="btn btn-round js-sound" type="button" aria-label="声音开关">🔊</button>
   </header>
   <div class="stage">
     <button id="prev-img" class="btn btn-arrow" type="button" aria-label="上一个图案">‹</button>
-    <div id="preview-card" class="card preview-card"><div class="preview-slot" id="preview-slot"></div></div>
+    <div id="preview-card" class="card preview-card">
+      <div class="preview-slot" id="preview-slot"></div>
+      <button id="del-custom" class="del-btn hidden" type="button" aria-label="删除这张图">✕</button>
+    </div>
     <button id="next-img" class="btn btn-arrow" type="button" aria-label="下一个图案">›</button>
   </div>
+  <div class="page-meta"><span id="page-counter" class="counter"></span></div>
   <div id="level-row" class="level-row"></div>
   <div class="cta-row">
     <button id="start-btn" class="btn btn-yellow btn-cta" type="button">开始拼图</button>
   </div>
 </section>
 
+<input id="file-input" type="file" accept="image/*" class="hidden" tabindex="-1" aria-hidden="true">
+<div id="toast" class="toast" role="status"></div>
+
 <script src="js/levels.js"></script>
 <script src="js/rng.js"></script>
+<script src="js/geometry.js"></script>
+<script src="js/pieces.js"></script>
+<script src="js/storage.js"></script>
+<script src="js/images.js"></script>
+<script src="js/ui-home.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>
