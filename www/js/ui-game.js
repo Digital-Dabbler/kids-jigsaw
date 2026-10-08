@@ -259,6 +259,7 @@
     var secs = (performance.now() - S.startAt) / 1000;
     var stars = PG.levels.starsFor(S.level, secs);
     PG.main.storage.saveStars(S.page.id, S.level, stars);
+    S.drag = null;
     PG.audio.play('win');
     if (PG.uiDone) {
       PG.uiDone.show({ level: S.level, stars: stars, secs: secs });
@@ -277,5 +278,9 @@
   wire();
 
   global.PG = global.PG || {};
-  PG.uiGame = { start: start };
+  PG.uiGame = {
+    start: start,
+    current: function () { return S ? { page: S.page, level: S.level } : null; },
+    goHome: goHome
+  };
 })(typeof window !== 'undefined' ? window : globalThis);

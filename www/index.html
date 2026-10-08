@@ -54,6 +54,20 @@
   <div id="peek-overlay" class="overlay hidden"><img id="peek-img" alt="完整图案预览"></div>
 </section>
 
+<div id="done" class="overlay hidden">
+  <div class="panel">
+    <h2>拼完啦！</h2>
+    <div id="stars" class="stars"></div>
+    <p id="done-time" class="done-time"></p>
+    <div class="cta-row">
+      <button id="next-level-btn" class="btn btn-yellow" type="button">下一关</button>
+      <button id="retry-btn" class="btn btn-green" type="button">再玩一次</button>
+      <button id="home-btn" class="btn" type="button">回家</button>
+    </div>
+  </div>
+</div>
+<canvas id="confetti" class="hidden"></canvas>
+
 <script src="js/levels.js"></script>
 <script src="js/rng.js"></script>
 <script src="js/geometry.js"></script>
@@ -61,9 +75,11 @@
 <script src="js/storage.js"></script>
 <script src="js/images.js"></script>
 <script src="js/game.js"></script>
+<script src="js/format.js"></script>
 <script src="js/audio.js"></script>
 <script src="js/ui-home.js"></script>
 <script src="js/ui-game.js"></script>
+<script src="js/ui-done.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>
