@@ -1,0 +1,17 @@
+{
+  "name": "拼图小岛 · 儿童拼图",
+  "short_name": "拼图小岛",
+  "description": "面向 4~8 岁小朋友的拼图游戏：C1~C8（8~1000 块），内置卡通图案与自定义上传。",
+  "lang": "zh-CN",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#8ed8f8",
+  "theme_color": "#8ed8f8",
+  "icons": [
+    { "src": "assets/icons/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "assets/icons/icon-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "assets/icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}

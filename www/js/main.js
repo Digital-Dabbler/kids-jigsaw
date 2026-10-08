@@ -34,4 +34,19 @@
   applySoundIcon();
 
   PG.main = { home: home, storage: storage, applySoundIcon: applySoundIcon };
+
+  // PWA：仅安全上下文注册 SW（file:// 跳过）
+  if ('serviceWorker' in navigator &&
+      (location.protocol === 'https:' || location.hostname === 'localhost' || location.hostname === '127.0.0.1')) {
+    window.addEventListener('load', function () {
+      navigator.serviceWorker.register('sw.js').catch(function () { /* 离线缓存不可用不致命 */ });
+    });
+  }
+
+  // 首次手势解锁音频
+  var unlockOnce = function () {
+    if (PG.audio) PG.audio.unlock();
+    window.removeEventListener('pointerdown', unlockOnce);
+  };
+  window.addEventListener('pointerdown', unlockOnce);
 })();
