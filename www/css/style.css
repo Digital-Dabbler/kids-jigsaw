@@ -165,3 +165,45 @@ body {
 }
 .toast.show { opacity: 1; transform: translateX(-50%) translateY(0); }
 .btn-disabled { filter: grayscale(.8) brightness(.9); opacity: .6; pointer-events: none; }
+
+/* ---- 游戏屏 ---- */
+#game { padding: 0; gap: 0; }
+.hud {
+  display: flex; align-items: center; gap: 10px;
+  padding: calc(10px + var(--safe-t)) 12px 8px;
+}
+.hud-badge { flex: none; transform: rotate(45deg) scale(.82); }
+.hud-badge .badge-num { font-size: 14px; letter-spacing: 0; }
+.progress {
+  position: relative; flex: 1; height: 28px;
+  border-radius: 999px; border: 3px solid rgba(0, 0, 0, .25);
+  background: rgba(255, 255, 255, .55);
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, .15);
+  overflow: hidden;
+}
+.progress-fill {
+  position: absolute; inset: 0; width: 0%;
+  background: linear-gradient(180deg, var(--green-1), var(--green-2));
+  transition: width .15s;
+}
+.progress-text {
+  position: absolute; inset: 0;
+  display: flex; align-items: center; justify-content: center;
+  font-weight: 900; font-size: 13px; color: #14400a;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, .5);
+}
+#board-wrap { position: relative; flex: 1; min-height: 0; }
+#board {
+  position: absolute; inset: 0; width: 100%; height: 100%;
+  display: block; touch-action: none;
+}
+.overlay {
+  position: fixed; inset: 0; z-index: 40;
+  display: flex; align-items: center; justify-content: center;
+  background: rgba(20, 40, 70, .45);
+}
+#peek-img {
+  max-width: 86vw; max-height: 76vh;
+  border-radius: 18px; border: 4px solid #fff;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, .4);
+}

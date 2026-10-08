@@ -37,13 +37,33 @@
 <input id="file-input" type="file" accept="image/*" class="hidden" tabindex="-1" aria-hidden="true">
 <div id="toast" class="toast" role="status"></div>
 
+<section id="game" class="screen hidden">
+  <header class="hud">
+    <button id="back-btn" class="btn btn-round" type="button" aria-label="返回">‹</button>
+    <span class="badge badge-cur hud-badge"><span class="badge-num" id="hud-level">C1</span></span>
+    <div class="progress">
+      <div id="progress-fill" class="progress-fill"></div>
+      <span id="progress-text" class="progress-text">0/8</span>
+    </div>
+    <button id="peek-btn" class="btn btn-round" type="button" aria-label="按住看全图">👁</button>
+    <button id="sound-btn-2" class="btn btn-round js-sound" type="button" aria-label="声音开关">🔊</button>
+  </header>
+  <div id="board-wrap">
+    <canvas id="board"></canvas>
+  </div>
+  <div id="peek-overlay" class="overlay hidden"><img id="peek-img" alt="完整图案预览"></div>
+</section>
+
 <script src="js/levels.js"></script>
 <script src="js/rng.js"></script>
 <script src="js/geometry.js"></script>
 <script src="js/pieces.js"></script>
 <script src="js/storage.js"></script>
 <script src="js/images.js"></script>
+<script src="js/game.js"></script>
+<script src="js/audio.js"></script>
 <script src="js/ui-home.js"></script>
+<script src="js/ui-game.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>
