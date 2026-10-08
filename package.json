@@ -1,0 +1,9 @@
+{
+  "name": "kids-jigsaw",
+  "version": "0.1.0",
+  "private": true,
+  "description": "儿童拼图网页游戏：C1~C8（8~1000 块），PWA + 鸿蒙自装壳",
+  "scripts": {
+    "test": "node tests/run.js"
+  }
+}
