@@ -2,6 +2,7 @@ node_modules/
 *.log
 .DS_Store
 Thumbs.db
+www/assets/raw/
 harmony/**/build/
 harmony/**/.preview/
 harmony/.idea/

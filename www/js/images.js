@@ -2,7 +2,14 @@
 (function (global) {
   'use strict';
 
-  var BUILTIN = []; // [{id,name,src}]，资源提交后填充
+  var BUILTIN = [
+    { id: 'b1', name: '小恐龙', src: 'assets/builtin/b1.jpg' },
+    { id: 'b2', name: '海底世界', src: 'assets/builtin/b2.jpg' },
+    { id: 'b3', name: '农场伙伴', src: 'assets/builtin/b3.jpg' },
+    { id: 'b4', name: '太空火箭', src: 'assets/builtin/b4.jpg' },
+    { id: 'b5', name: '熊猫竹林', src: 'assets/builtin/b5.jpg' },
+    { id: 'b6', name: '糖果城堡', src: 'assets/builtin/b6.jpg' }
+  ];
 
   function list(custom) {
     var out = BUILTIN.map(function (b) {
