@@ -1,0 +1,7 @@
+{
+  "string": [
+    { "name": "module_desc", "value": "拼图小岛入口模块" },
+    { "name": "EntryAbility_desc", "value": "拼图小岛" },
+    { "name": "EntryAbility_label", "value": "拼图小岛" }
+  ]
+}

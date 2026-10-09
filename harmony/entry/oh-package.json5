@@ -1,0 +1,9 @@
+{
+  "name": "entry",
+  "version": "0.1.0",
+  "description": "拼图小岛入口模块",
+  "main": "",
+  "author": "digital-dabbler",
+  "license": "Apache-2.0",
+  "dependencies": {}
+}

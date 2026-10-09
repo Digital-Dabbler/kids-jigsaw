@@ -3,6 +3,7 @@ node_modules/
 .DS_Store
 Thumbs.db
 www/assets/raw/
+harmony/entry/src/main/resources/rawfile/www/
 harmony/**/build/
 harmony/**/.preview/
 harmony/.idea/

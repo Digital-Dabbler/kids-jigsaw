@@ -1,0 +1,13 @@
+{
+  "name": "kids-jigsaw",
+  "version": "0.1.0",
+  "description": "儿童拼图游戏鸿蒙壳",
+  "main": "",
+  "author": "digital-dabbler",
+  "license": "Apache-2.0",
+  "dependencies": {},
+  "devDependencies": {
+    "@ohos/hvigor": "4.2.2",
+    "@ohos/hvigor-ohos-plugin": "4.2.2"
+  }
+}
